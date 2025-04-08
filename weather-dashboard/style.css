@@ -1,0 +1,185 @@
+/* === Global Styles === */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(to right, #00c6ff, #0072ff);
+    color: #333;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .container {
+    max-width: 900px;
+    background: #ffffffdd;
+    padding: 30px;
+    border-radius: 25px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(8px);
+  }
+  
+  /* === Title === */
+  h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #0056b3;
+    margin-bottom: 25px;
+  }
+  
+  /* === Input Section === */
+  .input-group {
+    gap: 10px;
+  }
+  
+  input.form-control {
+    border-radius: 12px;
+    padding: 10px 15px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    box-shadow: inset 0 1px 3px rgba(0,0,0,0.1);
+  }
+  
+  .btn {
+    border-radius: 12px;
+    padding: 10px 20px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+  }
+  
+  .btn:hover {
+    opacity: 0.9;
+  }
+  
+  /* === Suggestions Dropdown === */
+  #suggestions {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #fff;
+    width: 100%;
+    border-radius: 0 0 10px 10px;
+    border: 1px solid #ccc;
+    border-top: none;
+    z-index: 1000;
+    max-height: 200px;
+    overflow-y: auto;
+  }
+  
+  #suggestions div {
+    padding: 10px;
+    cursor: pointer;
+    transition: background 0.2s ease;
+  }
+  
+  #suggestions div:hover {
+    background-color: #f2f2f2;
+  }
+  
+  /* === Weather Result Card === */
+  .weather-display {
+    margin-top: 30px;
+    background: linear-gradient(145deg, #ffffff, #f0f0f0);
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 8px 8px 16px #d1d1d1,
+                -8px -8px 16px #ffffff;
+    text-align: center;
+  }
+  
+  .weather-display h3 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #007bff;
+  }
+  
+  .weather-icon {
+    width: 90px;
+    margin-bottom: 15px;
+  }
+  
+  /* === Weather Details === */
+  .weather-detail {
+    font-size: 1.1rem;
+    padding: 12px;
+    margin: 10px auto;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: inset 2px 2px 6px #e0e0e0,
+                inset -2px -2px 6px #ffffff;
+    max-width: 350px;
+    text-align: left;
+  }
+  
+  /* === Forecast Section === */
+  #forecastResult h4 {
+    font-size: 1.6rem;
+    color: #0056b3;
+    font-weight: bold;
+  }
+  
+  #forecastCards .card {
+    background: #ffffffdd;
+    border-radius: 15px;
+    padding: 15px;
+    border: none;
+    box-shadow: 3px 3px 8px rgba(0,0,0,0.1);
+    transition: transform 0.2s ease;
+  }
+  
+  #forecastCards .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 6px 6px 15px rgba(0,0,0,0.15);
+  }
+  
+  #forecastCards h6 {
+    font-weight: bold;
+    color: #007bff;
+  }
+  
+  /* === Responsive === */
+  @media (max-width: 768px) {
+    .container {
+      padding: 20px;
+    }
+  
+    .weather-detail {
+      font-size: 1rem;
+    }
+  
+    .btn {
+      padding: 8px 14px;
+      font-size: 0.9rem;
+    }
+  
+    h1 {
+      font-size: 2rem;
+    }
+  
+    .weather-display {
+      padding: 20px;
+    }
+  }
+
+  #suggestions {
+    position: absolute;
+    background: rgb(255, 255, 255);
+    border: 1px solid #ddd;
+    width: 100%;
+    z-index: 1000;
+    max-height: 200px;
+    overflow-y: auto;
+  }
+  
+  .suggestion-item {
+    padding: 8px 12px;
+    cursor: pointer;
+  }
+  
+  .suggestion-item:hover {
+    background-color: #cebfbf;
+  }
+  
